@@ -22,6 +22,7 @@
 
 create a .env file . Then input your Port and Database url . like this ---
 
+- NODE_ENV= Enter your work position
 - PORT= Enter your port ;
 - DATABASE_URL= Enter your port ;
 
