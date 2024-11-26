@@ -6,9 +6,13 @@
 - Express.js
 - Mongoose
 
-## Npm Package 
-- cors 
-- .env 
+## Installation 
+- npm init -y    
+- npm install typescript --save-dev     <!--Install typescript -->
+- npm install express     <!--Install express -->
+- npm install mongoose   <!--Install mongoose -->
+  
+
 
 
 
