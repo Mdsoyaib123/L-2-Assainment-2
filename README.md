@@ -22,8 +22,8 @@
 
 create a .env file . Then input your Port and Database url . like this ---
 
-PORT= Enter your port ;
-DATABASE_URL= Enter your port ;
+- PORT= Enter your port ;
+- DATABASE_URL= Enter your port ;
 
 ## Run the Application in development
 
