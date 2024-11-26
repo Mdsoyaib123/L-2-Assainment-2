@@ -34,6 +34,7 @@ const updateProduct = async (id: string, data: TProduct) => {
   const result = await ProductModel.findOne({ _id: id });
   return result;
 };
+
 // delete a product
 const deleteProduct = async (id: string) => {
   const removeProduct = await ProductModel.deleteOne({ _id: id });

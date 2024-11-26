@@ -27,7 +27,7 @@ const createProduct = async (req: Request, res: Response) => {
 
 const getAllProduct = async (req: Request, res: Response) => {
   try {
-    // query from database
+    // query At database
     const result = await ProductService.getAllProduct();
     // send response
     res.status(200).json({
@@ -48,7 +48,7 @@ const getSingleProduct = async (req: Request, res: Response) => {
   try {
     const id = req.params.productId;
 
-    // query from DB
+    // query At DB
     const result = await ProductService.getSingleProduct(id);
 
     //send response
@@ -70,7 +70,7 @@ const updateProduct = async (req: Request, res: Response) => {
   try {
     const id = req.params.productId;
     const data  = req.body
-    // update data from DB
+    // update data At DB
     const result = await ProductService.updateProduct(id,data);
     //send response
     res.status(200).json({
