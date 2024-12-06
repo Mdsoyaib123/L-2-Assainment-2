@@ -3,7 +3,7 @@ import { ProductModel } from "../products/product.model";
 import { TOrder } from "./order.interface";
 import { OrderModel } from "./order.model";
 
-// create a order 
+// create a order
 const createOrder = async (data: TOrder, res: Response) => {
   const id = data.product;
   const isExitProduct = await ProductModel.findOne({ _id: id });
@@ -44,11 +44,13 @@ const createOrder = async (data: TOrder, res: Response) => {
       },
     }
   );
-  const result = await OrderModel.create(data);
-  return result;
+  if (decreaseProductQuantity) {
+    const result = await OrderModel.create(data);
+    return result;
+  }
 };
 
-// calculate Total Revenue 
+// calculate Total Revenue
 const totalRevenue = async () => {
   const result = await OrderModel.aggregate([
     {

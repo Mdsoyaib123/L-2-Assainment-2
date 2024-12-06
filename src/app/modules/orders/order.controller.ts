@@ -36,7 +36,7 @@ const totalRevenue = async (req: Request, res: Response) => {
   } catch (error: any) {
     res.status(500).json({
       message: error._message || "An error occurred",
-      success: false,
+      success: false, 
       error: error,
       stack: error.stack,
     });

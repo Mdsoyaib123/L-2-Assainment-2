@@ -22,10 +22,13 @@
 
 create a .env file . Then input your Port and Database url . like this ---
 
-- NODE_ENV= Enter your work position
+- NODE_ENV= Enter your working position;
 - PORT= Enter your port ;
 - DATABASE_URL= Enter your port ;
 
 ## Run the Application in development
 
 - npm run start:dev
+
+
+## live link : https://assainment-2-l2.vercel.app
