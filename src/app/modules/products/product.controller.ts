@@ -31,7 +31,7 @@ const getAllProduct = async (req: Request, res: Response) => {
     const result = await ProductService.getAllProduct();
     // send response
     res.status(200).json({
-      message: "Books Get successfully",
+      message: "All Books Get successfully",
       success: true,
       data: result,
     });
